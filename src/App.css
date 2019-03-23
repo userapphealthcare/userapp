@@ -1,33 +1,323 @@
-.App {
+@import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700');
+@import url('https://fonts.googleapis.com/css?family=Yellowtail:400');
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+.blocks{
+  margin:1%;
+  position: absolute;
+  font-size:3em;
+  color: whitesmoke;
+  box-shadow: #2f3640;
+  top:5%;
+  left: 4%;
+  font-family: 'Shadows Into Light', cursive;
+}
+
+
+.rightNav {
+  float: right;
+  top:4%;
+  color:whitesmoke;
+
+  font-family: 'Shadows Into Light', cursive;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+  
+}
+
+.dropdown .dropbtn {
+  font-size:2em;
+  border: none;
+  outline: none;
+  color: whitesmoke;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 1%;
+}
+
+.dropdown-content {
+  font-size: 2em;
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  color:black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  right: 1%;
+  
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+
+body.bg{
+font-family:  'Inconsolata', monospace;
+margin: 0;
+padding: 0;
+overflow-x:hidden;
+background-color: #ffffff;}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+margin: 0;
+padding: 0;
+}
+.nopadding{
+margin: 0 !important;
+padding: 0 !important;
+}
+.nopadding1 {
+margin: 0 !important;
+padding: 0 !important;
+padding-right: 20px !important;
+}
+a {
+text-decoration: none !important;
+}
+ul li {
+list-style-type: none;
+}
+/*-------------------------------------------------------*/
+/*top_bar Section----------------------------------------*/
+/*-----------------------------------------------------*/
+.top_section{
+background: #114357; 
+background: -webkit-linear-gradient(to left, #114357 , #F29492); 
+background: linear-gradient(to left, #114357 , #F29492); 
+width: 100%;
+height: 100vh;
+padding: 8%;
+margin:0;
+}
+.profile_name{
+padding: 3% 0;
+text-align: center;
+margin: 0;
+}
+.circle{
+height: 150px;
+width: 150px;
+border-radius: 100%;
+text-align: center;
+display: block;
+overflow: hidden;
+margin: 0 auto;
+padding: 0;
+}
+.circle a{
+text-decoration: none;
+display: block;
+}
+.circle a img{
+width: 150px;
+padding: 0;
+margin: 0;
+text-align: center;
+}
+.profile_name h1{
+color: #ffffff;
+padding: 25px 0;
+padding-bottom: 0;
+text-transform: uppercase;
+font-size: 4em;
+font-weight: 700;
+margin-bottom: 0;
+}
+.profile_name p.position a{
+color: rgba(255,255,255,0.7);
+font-size: 16px;
+text-decoration: underline;
+text-transform: uppercase;
+}
+.profile_name p.position{
+color: rgba(255,255,255,0.7);
+font-size: 2em;
+padding: 5px 10px;
+letter-spacing: 1px;
+line-height: 1.8em;
+padding-top: 0;
+margin-top: 0;
+}
+.profile_name p.intro{
+color: rgba(255,255,255,0.7);
+font-size: 2em;
+padding: 5px 6%;
+}
+.profile_name h6{
+font-family: 'Yellowtail', cursive;
+color: #ffffff;
+padding-top:30px;
+}
+
+.msg{
+      margin: 3%;
+      padding: 2%;
+      width: 60%;
+      font-size: 1em;
+      color: whitesmoke;
+      text-align: center;
+      background: #262626;
+      box-shadow: #114357;
+
+}
+
+
+
+
+/*-----------------------------------------------------*/
+/*--myprofile-section------------------------------------*/
+/*-----------------------------------------------------*/
+.myprofile_section{
+  padding: 6% 8%;
+  margin: 0;
+  }
+  .myprofile_section h1{
+  font-size: 60px;
+  font-weight: 700;
+  padding: 10px 0;
+  margin: 0;
+  color:  #000;
   text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
   }
-  to {
-    transform: rotate(360deg);
+  .myprofile_section p{
+  text-align: center;
+  font-size: 18px;
+  color: rgba(0,0,0,0.8);
+  letter-spacing: 1px;
+  padding: 5px 3%;
+  margin: 0;
   }
-}
+  
+/*--form-section------------------------------------*/
+.form-section{
+  margin: 0;
+  padding: 30px 0;
+  padding-bottom: 0;
+  }
+  form{
+  margin: 0;
+  padding: 15px 0;	
+  }
+  form input , form textarea{
+  padding: 15px 30px;
+  width: 100%;
+  margin-bottom: 20px;
+  outline: 0;
+  border:none;
+  border: 1px solid rgba(0,0,0,0.2);
+  font-size: 15px;
+  color: rgba(0,0,0,1);
+  }
+  form button{
+  padding: 10px 30px;
+  outline: 0;
+  border:none;
+  border: 1px solid rgba(0,0,0,0.2);
+  background-color: #000;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-top: 15px;
+  }
+  /*-----------------------------------------------------*/
+  /*--test-section------------------------------------*/
+  /*-----------------------------------------------------*/
+  .test-section{
+  padding: 6% 8%;
+  margin: 0;
+  background: #114357; 
+  background: -webkit-linear-gradient(to left, #F29492 , #114357); 
+  background: linear-gradient(to left, #F29492 , #114357); 
+  text-align: center;
+  color: #ffffff;
+  }
+  .test-section h1{
+  font-size: 60px;
+  font-weight: 700;
+  padding: 10px 0;
+  margin: 0;
+  color:  #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  }
+  .test-section ul{
+  padding-top: 3%;
+  }
+  .test-section ul li{
+  list-style-type: none;
+  display: inline-block;
+  margin: 0 20px;
+  height: 60px;
+  width: 60px;
+  border:solid 2px #ffffff;
+  border-radius: 100%;
+  }
+  .test-section ul li a{
+  display: block;
+  text-align: center;
+  font-size: 23px;
+  color: #ffffff;
+  padding-top: 22%;
+  }
+  .test-section p{
+  font-size: 17px;
+  letter-spacing: 1px;
+  padding: 5px 3%;
+  margin: 0;
+  padding-top: 22px;
+  }
+  .test-section form {
+  padding: 30px 0;
+  }
+  /*-----------------------------------------------------*/
+  /*--socialicon-----------------------------------------*/
+  /*-----------------------------------------------------*/
+  .socialicon{
+  padding: 1% 8%;
+  margin: 0;
+  text-align: center;
+  }
+  .socialicon ul{
+  margin: 0;
+  padding: 0;
+  }
+  .socialicon ul li{
+  display: inline-block;
+  padding: 0 25px;	
+  }
+  .socialicon ul li a{
+  text-decoration: none;
+  font-size: 35px;
+  color: rgba(0,0,0,0.3);
+  }
+
+
+  .centercont{
+    width:50%;
+    margin-left:25%;
+
+  }
